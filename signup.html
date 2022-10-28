@@ -8,75 +8,123 @@
     <title>Sign Up</title>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat&family=Dancing+Script&family=Lobster&family=Poppins&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Century Gothic';
+        }
         body {
-            background-color: black;
-            color: white;
+            background-image: linear-gradient(to bottom right,rgb(102, 153, 198), rgb(232, 154, 154));
+            height :100vh;
+            width: 100vw;
+            color: black;
+        }
+        
+
+        .container{
+            position: relative;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            /* text-align: center; */
+            padding: 3rem ;
+            /* padding-bottom: 2rem; */
+            height: 27rem;
+            margin-top: 2rem;
+            margin-left: 30rem; 
+            margin-right: 30rem;
+            /* margin-top: 8rem; */
+            border-radius: 10px;
+            
+
+        }
+        .email{
+            height: 32px;
+            width: 32px;
+        }
+
+        .logins{
+            margin-left: 2rem;
+            cursor: pointer;
+        }
+
+        #name1 , #name2{
+            /* border: 2px solid black; */
+            width: 7rem;
+            padding: 12px 20px;
+            /* margin-left: 119px; */
+            box-sizing: border-box;
+        }
+        #name1{
+            margin-left: 2rem;
         }
 
         #email {
-            border: 2px solid black;
-            width: 30%;
+            /* border: 2px solid black; */
+            width: 14rem;
             padding: 12px 20px;
-            margin-left: 119px;
+            margin-left: 2rem;
             box-sizing: border-box;
         }
 
         #pass {
-            border: 2px solid black;
-            width: 30%;
+            /* border: 2px solid black; */
+            width: 14rem;
             padding: 12px 20px;
-            margin-left: 94px;
+            margin-left: 2rem;
             box-sizing: border-box;
         }
 
         #conpass {
-            border: 2px solid black;
-            width: 30%;
+            /* border: 2px solid black; */
+            width: 14rem;
             padding: 12px 20px;
-            margin-left: 32px;
+            margin-left: 2rem;
             box-sizing: border-box;
         }
 
         .cancelbtn {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: bold;
-            background: linear-gradient(135deg, #042033, #c889e5);
-            padding: 1.2rem 2.5rem;
+            background: linear-gradient(to bottom right,rgb(102, 153, 198), rgb(232, 154, 154));
+            padding: 1rem 2rem;
             border: none;
             cursor: pointer;
-            font-size: 19px;
+            font-size: 15px;
             border-radius: 31px;
             color: #cecece;
-            margin-left: 37vw;
+            /* margin-left: 37vw; */
             margin-top: 3vh;
         }
         .signupbtn {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: bold;
-            background: linear-gradient(135deg, #042033, #c889e5);
-            padding: 1.2rem 2.5rem;
+            background: linear-gradient(to bottom right,rgb(102, 153, 198), rgb(232, 154, 154));
+            padding: 1rem 2rem;
             border: none;
             cursor: pointer;
-            font-size: 19px;
+            font-size: 15px;
             border-radius: 31px;
             color: #cecece;
-            margin-left: 3vw;
+            margin-left: 2vw;
             margin-top: 3vh;
         }
         .withoutbtn{
-            margin-left: 520px;
+            /* margin-left: 520px; */
         }
         .headings{
-            margin-left: 622px;
+            /* margin-left: 622px; */
         }
-        .container{
+        /* .container{
             margin-top: 164px;
             
-        }
+        } */
     </style>
 </head>
 
 <body>
+    <!-- <img class="bck" src="signup_bckgrd.jpg"> -->
     <div class="container">
         <div class="headings">
             <h1>Sign Up</h1>
@@ -85,19 +133,26 @@
         <form action="#">
             <div class="withoutbtn">
                 <div class="qaemail">
-                    <label for="email"><b>Email</b></label>
+                    <img class="name" src ="user_icon.png">
+                    <input type="text" id="name1" placeholder="Enter Name" name="name" required>
+                    <input type="text" id="name2" placeholder="Enter Name" name="name" required>
+                </div>
+                <br>
+
+                <div class="qaemail">
+                    <img class="email" src ="email_icon.png">
                     <input type="text" id="email" placeholder="Enter Email" name="email" required>
                 </div>
                 <br>
         
                 <div class="qapass">
-                    <label for="psw"><b>Password</b></label>
+                    <img class="email" src ="password_icon.png">
                     <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
                 </div>
                 <br>
         
                 <div class="qaconpass">
-                    <label for="psw-repeat"><b>Confirm Password</b></label>
+                    <img class="email" src ="password_icon.png">
                     <input type="password" id="conpass" placeholder="Confirm Password" name="psw-confirm" required>
                 </div>
                 <br>
@@ -108,6 +163,11 @@
                         me
                     </label>
                 </div>
+            </div>
+            <div>
+                <img class ="logins" src="google_icon.svg">
+                <img class ="logins" src="facebook_icon.svg">
+                <img class ="logins" src="twitter_icon.svg">
             </div>
     
     
