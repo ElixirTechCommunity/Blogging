@@ -89,13 +89,15 @@ p {
     background-color: rgb(71 70 72 / 32%);
     position: absolute;
     top:100%;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     width: 100%;
     height: auto;
+    padding:1.5rem ;
+    
 }
 #about h1{
-    margin-top: 23vh;
+    margin-bottom: 25vh;
     margin-left: 43vw;
 }
 #about p{
@@ -106,8 +108,9 @@ p {
     flex-direction: column;
     margin-right: 50%;
     margin-left: 29%;
-    margin-right: 50%;
-    margin-top: -50px;
+    /* margin-right: 50%; */
+    margin-top: -180px;
+    margin-bottom: 5rem;
 }
 #blog{
     background-color: rgb(74 64 61);
